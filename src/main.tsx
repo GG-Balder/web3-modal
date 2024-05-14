@@ -5,7 +5,7 @@ import './index.css'
 import { Web3ModalProvider } from './context/index.tsx'
 import VConsole from 'vconsole';
 
-const vConsole = new VConsole();
+new VConsole();
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Web3ModalProvider>

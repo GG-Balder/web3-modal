@@ -1,9 +1,9 @@
-import { useWeb3Modal } from '@web3modal/wagmi/react'
-import { useAccount, useContractRead } from 'wagmi';
+import { useWeb3Modal } from '@web3modal/wagmi/react';
+import { useAccount } from 'wagmi';
 const App = function () {
   // 4. Use modal hook
   const { open } = useWeb3Modal()
-  const { isConnected, address } = useAccount();
+  const { isConnected } = useAccount();
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", }}>
       <button onClick={() => open()}>Open Connect Modal</button>
