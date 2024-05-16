@@ -1,9 +1,5 @@
 import { useWeb3Modal } from '@web3modal/wagmi/react';
-import { getDefaultProvider } from 'ethers';
-import { createPublicClient, http } from 'viem';
-import { mainnet } from 'viem/chains';
 import { useAccount } from 'wagmi';
-import Web3 from 'web3';
 const App = function () {
   // 4. Use modal hook
   const { open } = useWeb3Modal()
